@@ -51,8 +51,8 @@ namespace CoopSoftNetCore
             Thread.Sleep(duration);
             Dispatcher.Invoke(() =>
             {
-                MyDockPanel.Visibility = vs;
-                TOOGLE.Content = mode;
+                //MyDockPanel.Visibility = vs;
+                //TOOGLE.Content = mode;
             });
         }
     }

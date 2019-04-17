@@ -50,14 +50,8 @@
             </Setter>
         </Style>
 
-        <Style TargetType="Button" x:Key="border">
-            <Setter Property="Background" Value="#3897f0" />
-            <Setter Property="Foreground" Value="White" />
-            <Setter Property="Height" Value="40" />
-            <Setter Property="FontSize" Value="25" />
-            <Setter Property="Cursor" Value="Hand" />
-
-            <Setter Property="Template">
+        <Style TargetType="Button" x:Key="corner">
+             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
                         <Border CornerRadius="3,3,3,3" Background="#3897f0" BorderBrush="White" BorderThickness="1,1,1,1" >
@@ -66,6 +60,22 @@
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
+        </Style>
+
+        <Style TargetType="Button" x:Key="border" BasedOn="{StaticResource corner}">
+            <Setter Property="Background" Value="#3897f0" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="Height" Value="40" />
+            <Setter Property="FontSize" Value="25" />
+            <Setter Property="Cursor" Value="Hand" />
+        </Style>
+
+        <Style x:Key="menuItems" TargetType="MenuItem">
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter Property="IsSubmenuOpen" Value="True" />
+                </Trigger>
+            </Style.Triggers>
         </Style>
 
 

@@ -9,21 +9,16 @@
         Background="#fafafa"
         ResizeMode="CanMinimize"
         Title="Home" Height="450" Width="800">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="64*"/>
-            <ColumnDefinition Width="200*"/>
-        </Grid.ColumnDefinitions>
-
-        <StackPanel Orientation="Horizontal" Margin="0">
+    
+        
+        <!--<StackPanel Orientation="Horizontal" Margin="0">
             <DockPanel x:Name="MyDockPanel" Background="Yellow" Opacity="1">
                 <ListBox Name="ListView" HorizontalAlignment="Left" Height="auto" VerticalAlignment="Top" Width="auto">
-                    <ListBoxItem Content="Coffie"></ListBoxItem>
-                    <ListBoxItem Content="Tea"></ListBoxItem>
-                    <ListBoxItem Content="Orange Juice"></ListBoxItem>
-                    <ListBoxItem Content="Milk"></ListBoxItem>
-                    <ListBoxItem Content="Iced Tea"></ListBoxItem>
-                    <ListBoxItem Content="Mango Shake"></ListBoxItem>
+                    <ListBoxItem Content="Modulo 1">
+                
+                    </ListBoxItem>
+                    <ListBoxItem Content="Modulo 2"></ListBoxItem>
+                    <ListBoxItem Content="Modulo 3"></ListBoxItem>
                 </ListBox>
             </DockPanel>
 
@@ -51,11 +46,36 @@
                     </EventTrigger>
                 </ToggleButton.Triggers>
             </ToggleButton>
-        </StackPanel>
+        </StackPanel>-->
 
-        <Button Content="Home - Show" HorizontalAlignment="Left" Margin="149,98,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" Grid.Column="1"/>
-        <Button Content="Inventario - Hide" HorizontalAlignment="Left" Margin="487,98,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1" Grid.Column="1"/>
+        <!--<Menu HorizontalAlignment="Left" Width="300">
+            <Menu.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel />
+                </ItemsPanelTemplate>
+            </Menu.ItemsPanel>
+            <MenuItem Header="Item 1" />
+            <MenuItem Header="Item 2" Style="{StaticResource menuItems}">
+                <MenuItem Header="Sub item 1" />
+                <MenuItem Header="Sub item 2" />
+                <MenuItem Header="Sub item 3" />
+                <MenuItem Header="Sub item 4" />
+            </MenuItem>
+            <MenuItem Header="Item 3" />
+            <MenuItem Header="Item 4" />
+        </Menu>-->
 
-        <ContentControl x:Name="contentControl" Margin="10,135,10,0" Grid.Column="1"/>
-    </Grid>
+
+        <DockPanel x:Name="MyDockPanel" Background="Gray" Opacity=".6">
+        <Grid DockPanel.Dock="Left" Background="Black" Height="auto" Width="300">
+            <Button Style="{StaticResource border}" Content="Modulo 1" Margin="0,0,0,0" Name="modulo1" Width="auto">
+            </Button>
+            <TextBlock Name="txtHey" Visibility="Visible" Foreground="White">Hey</TextBlock>
+        </Grid>
+
+        <!--<Button Content="Home - Show" HorizontalAlignment="Left" Margin="149,98,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" Grid.Column="1"/>
+        <Button Content="Inventario - Hide" HorizontalAlignment="Left" Margin="487,98,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1" Grid.Column="1"/>-->
+
+        <ContentControl x:Name="contentControl" Margin="10,135,10,0"/>
+    </DockPanel>
 </Window>

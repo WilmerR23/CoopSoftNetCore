@@ -7013,6 +7013,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://me105035/PrincipalCollection/_packaging/MINERD/nuget/v3/index.json": {},
         "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore-tooling/index.json": {},
         "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore/index.json": {},
         "https://dotnetfeed.blob.core.windows.net/aspnet-entityframeworkcore/index.json": {},
